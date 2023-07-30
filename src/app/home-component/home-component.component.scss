@@ -470,6 +470,20 @@
     }
 }
 
+
+.imgProduct {
+    width: 100%;
+
+    .imgslider {
+        margin-top: 2vh;
+        border-radius: 40px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
 .sampleBreadingSpace {
     height: 200vh;
 }
