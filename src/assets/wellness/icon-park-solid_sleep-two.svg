@@ -1,0 +1,16 @@
+<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon-park-solid:sleep-two">
+<mask id="mask0_0_224" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="3" width="16" height="11">
+<g id="svgIDa">
+<g id="Group">
+<path id="Vector" d="M15.8613 9.89105H2M2 4V12.3168V4ZM15.8613 9.89105V12.3168V9.89105Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M8.23767 5.38623V9.89115H15.8614V6.42583C15.8614 6.15011 15.7519 5.88568 15.5569 5.69072C15.3619 5.49576 15.0975 5.38623 14.8218 5.38623H8.23767Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M5.11855 7.8121C5.69271 7.8121 6.15815 7.34666 6.15815 6.77251C6.15815 6.19835 5.69271 5.73291 5.11855 5.73291C4.5444 5.73291 4.07896 6.19835 4.07896 6.77251C4.07896 7.34666 4.5444 7.8121 5.11855 7.8121Z" fill="white" stroke="white" stroke-width="2"/>
+</g>
+</g>
+</mask>
+<g mask="url(#mask0_0_224)">
+<path id="Vector_4" d="M0 0H17V17H0V0Z" fill="#F23CB4"/>
+</g>
+</g>
+</svg>

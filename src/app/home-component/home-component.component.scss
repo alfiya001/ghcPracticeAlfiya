@@ -1,0 +1,475 @@
+.customNavbar {
+    width: 100%;
+    height: 80px;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1098;
+    background: #FFF;
+
+    .leftButton {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            object-fit: cover;
+        }
+    }
+
+    .logoImage {
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            padding: 10px 20px;
+            object-fit: contain;
+        }
+    }
+
+    .rightcartButton {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        cursor: pointer;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.uspSection {
+    width: 100%;
+    margin-top: 12vh;
+
+    .uspHeading {
+        width: 100%;
+        font-size: 22px;
+        font-weight: 300;
+        color: #333;
+
+        span {
+            font-weight: 500;
+        }
+    }
+
+    .uspBox {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+
+        .uspItem {
+            position: relative;
+            width: 100%;
+            height: 120px;
+
+            .uspItemMainBox {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 10px 0px;
+                z-index: 10;
+
+                .img {
+                    width: 100%;
+                    flex: 1;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .uspItemText {
+                    color: #333;
+                    font-size: 10px;
+                    font-weight: 500;
+                    text-align: center;
+                }
+            }
+
+            .uspItemBaxBox {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 70%;
+
+                border-radius: 10px;
+
+                z-index: 1;
+            }
+        }
+    }
+}
+
+
+.wellnessMainSection {
+    margin-top: 5vh;
+
+    .wellnessSection {
+        width: 100%;
+        padding: 12px 26px 12px 26px;
+        border-radius: 10px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.20) 100%), #EFEEFB;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16);
+
+        .wellnessHeading {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+
+        .weightSection {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+
+            .weight {
+                position: relative;
+                font-size: 40px;
+                font-weight: 500;
+                display: grid;
+                place-content: center;
+            }
+
+            .overweightBlock {
+                position: relative;
+                width: 55px;
+                height: 17px;
+                border-radius: 10px;
+                background: #FFF;
+                display: grid;
+                place-content: center;
+
+                span {
+                    color: #FA725F;
+                    font-size: 8px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .wellnesstipsBlock {
+            margin: 10px;
+            // display: flex;
+            width: 100px;
+            height: 26px;
+            padding: 4px 10px 4px 10px;
+            border-radius: 20px;
+            background: #FFF;
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.07);
+
+            display: grid;
+            grid-template-columns: 5px auto;
+            gap: 20px;
+            // place-content: center;
+
+            span {
+                font-weight: 700;
+                color: #333;
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+.greyText {
+    color: #777;
+    font-family: Roboto;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.healthCard {
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    .skinCard {
+        // height: 126px;
+        padding: 10px 10px 10px 10px;
+        justify-content: flex-end;
+        align-items: center;
+        border-radius: 10px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.20) 100%), #FFF3EB;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16);
+
+        .cardData {
+            padding-left: 0;
+        }
+
+        .cardTitle {
+            color: #333;
+            // font-variant-numeric: lining-nums proportional-nums;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        .cardrow {
+            // margin: 10px;
+            display: flex;
+            // width: 100px;
+            // height: 26px;
+            padding: 10px 10px 4px 4px;
+
+            display: grid;
+            grid-template-columns: 5px auto;
+            gap: 20px;
+        }
+
+        .cardScore {
+            position: relative;
+            font-size: 40px;
+            font-weight: 500;
+            display: grid;
+            place-content: center;
+        }
+
+        .outofScoresSection {
+            line-height: 14px;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+    }
+}
+
+
+.trackerButton {
+    width: 100%;
+
+    .tracker {
+        margin-top: 2vh;
+        width: 100%;
+        height: 48px;
+        border-radius: 4px;
+        background: #333;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+
+        .trackerTitle {
+            font-size: 16px;
+            font-variant-numeric: lining-nums proportional-nums;
+            font-weight: 500;
+            color: #FFF;
+        }
+    }
+}
+
+.imgButton {
+    width: 100%;
+
+    .imgslider {
+        margin-top: 2vh;
+        border-radius: 40px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.productsButton {
+
+    margin-top: 5vh;
+
+    .productsHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .sectiontitle {
+            color: #000;
+            // font-feature-settings: 'clig' off, 'liga' off;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 14px;
+            /* 70% */
+            letter-spacing: 0.18px;
+        }
+
+        .viewallbutton {
+            position: relative;
+            width: 70px;
+            height: 17px;
+            border-radius: 20px;
+            border: 1px solid #333;
+            background: #FFF;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+            display: grid;
+            place-content: center;
+
+            span {
+                color: #333;
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .products {
+        margin-top: 2vh;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .productCard {
+            // width: 100%;
+            border-radius: 10px;
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.20) 100%), #FFFFFF;
+            box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16);
+            padding: 20px 5px 20px 5px;
+
+            .productImgSection {
+                position: relative;
+
+                .img {
+                    // z-index: 10;
+                }
+
+                .likeimg {
+                    position: absolute;
+                    // bottom: 0;
+                    right: 5%;
+
+                    // z-index: 1;
+                }
+
+                .discountimg {
+                    position: absolute;
+                    left: -5%;
+
+                    .discountamount {
+                        position: absolute;
+                        color: #FFF;
+                        font-size: 10px;
+                        font-weight: 700;
+                        line-height: 20px;
+                        top: 20%;
+                        left: 10%;
+                    }
+                }
+            }
+
+            .producttitle {
+                color: #333;
+                font-weight: 500;
+                letter-spacing: 0.18px;
+            }
+
+            .rating {
+                span {
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: 0.18px;
+                    color: #333;
+                }
+            }
+
+            .amount {
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: 0.18px;
+                color: #333;
+                line-height: 20px;
+
+                span {
+                    font-size: 10px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    text-decoration-line: line-through;
+                }
+            }
+        }
+    }
+
+    .imgproducts {
+        margin-top: 2vh;
+    }
+
+}
+
+
+.menuBar {
+    width: 100%;
+    height: 66px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    z-index: 1098;
+    background: #FFF;
+
+    
+
+    .homebutton {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        padding: 10px 20px;
+        text-align: center;
+        div {
+            // font-family: Harmonia Sans Pro Cyr;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 18px;
+        }
+    }
+
+    .menubutton {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        padding: 10px 20px;
+        text-align: center;
+
+        div {
+            color: #B5B5B5;
+            // font-family: Harmonia Sans Pro Cyr;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 18px;
+        }
+    }
+}
+
+.sampleBreadingSpace {
+    height: 200vh;
+}
