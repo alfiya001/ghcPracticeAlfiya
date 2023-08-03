@@ -21,6 +21,7 @@
     "@types/gsap": "^3.0.0",
     "bootstrap": "^5.3.1",
     "gsap": "^3.12.2",
+    "ngx-drag-scroll": "^16.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"

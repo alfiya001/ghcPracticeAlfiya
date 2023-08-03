@@ -355,7 +355,7 @@
     .products {
         margin-top: 2vh;
         display: grid;
-        grid-template-columns: 2fr 3fr;
+        grid-template-columns: 2fr 2fr;
         justify-content: center;
         align-items: center;
         gap: 20px;
@@ -495,14 +495,18 @@
     .imgslider {
         margin-top: 2vh;
         position: relative;
+        margin: 10px;
 
         img {
-            width: 100%;
+            width: 271px;
+            height: 271px;
             background-color: rgba(0, 0, 0, 0.5);
 
         }
 
         .overlay {
+            width: 271px;
+            height: 271px;
             background-color: rgba(0, 0, 0, 0.5);
             top: 0;
             position: absolute;
@@ -517,7 +521,6 @@
             // justify-content: center;
             left: 0;
             bottom: 0;
-            width: 100%;
             padding: 2rem;
             letter-spacing: 0.18px;
             color: #FFF;
@@ -528,6 +531,11 @@
             }
         }
     }
+}
+
+drag-scroll {
+    height: 20rem;
+    width: 100%;
 }
 
 .sliderImgSection {

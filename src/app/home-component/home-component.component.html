@@ -558,39 +558,39 @@
             <div class="sectiontitle">Understanding Hair</div>
             <div class="viewallbutton"><span>View all</span></div>
         </div>
-        
-        <!-- <div class="imgproducts">
-            <div class="productCard">
-                <div class="imgProduct">
-                    <div class="container">
-                        <div class="imgslider"><img src="../../assets/slider2/img1.png" alt="img1">
-                            <div class="overlay">
-                                <div class="overlay_1">
-                                    Groom to Perfection: Aloe Vera Hair Mask for Men's Hair Care
-                                    <div>By Mars by GHC on Jun 22, 2022</div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
 </div>
 <div class="imgProduct">
     <div class="container">
-        <div class="imgslider"><img src="../../assets/slider2/img1.png" alt="img1">
-            <div class="overlay">
-                <div class="overlay_1">
-                    Groom to Perfection: Aloe Vera Hair Mask for Men's Hair Care
-                    <div>By Mars by GHC on Jun 22, 2022</div>
+        <drag-scroll [scroll-x-wheel-enabled]="true">
+            <div *ngFor="let p of productList; let i = index" drag-scroll-item>
+
+                <div class="imgslider"><img [src]="p.image" alt="img1">
+                    <div class="overlay">
+                        <div class="overlay_1">
+                            {{p.title}}
+                            <div>{{p.bytitle}}</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </drag-scroll>
 
     </div>
 </div>
+
+<!-- <div class="imgProduct">
+    <div class="container">
+            <div class="imgslider"><img src="../../assets/slider2/img1.png" alt="img1">
+                <div class="overlay">
+                    <div class="overlay_1">
+                        Groom to Perfection: Aloe Vera Hair Mask for Men's Hair Care
+                        <div>By Mars by GHC on Jun 22, 2022</div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div> -->
 
 <div class="trackerButton">
     <div class="container">
