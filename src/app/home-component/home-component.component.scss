@@ -370,10 +370,6 @@
             .productImgSection {
                 position: relative;
 
-                .img {
-                    // z-index: 10;
-                }
-
                 .likeimg {
                     position: absolute;
                     // bottom: 0;
@@ -430,9 +426,6 @@
         }
     }
 
-    .imgproducts {
-        margin-top: 2vh;
-    }
 
 }
 
@@ -534,14 +527,9 @@
 }
 
 drag-scroll {
-    height: 20rem;
+    height: 15rem;
     width: 100%;
 }
-
-.sliderImgSection {
-    position: relative;
-}
-
 
 .sampleBreadingSpace {
     height: 200vh;
