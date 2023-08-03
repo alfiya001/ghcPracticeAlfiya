@@ -31,6 +31,19 @@ export class HomeComponentComponent {
       "image": "../../assets/slider2/img4.png"
     }
   ];
+
+  imgList: Product[] = [
+    {
+      "title": "Groom to Perfection: Aloe Vera Hair Mask for Men's Hair Care",
+      "bytitle" : "By Mars by GHC on Jun 22, 2022",
+      "image": "../../assets/slider/img1.png"
+    },
+    {
+      "title": "Coffee for Hair Growth: Brew Up Longer, Thicker Hair with Coffee",
+      "bytitle" : "By Mars by GHC on Jun 22, 2022",
+      "image": "../../assets/slider/img2.png"
+    }
+  ];
   // jsonData = data as Array<any>;
   direction = "";
 

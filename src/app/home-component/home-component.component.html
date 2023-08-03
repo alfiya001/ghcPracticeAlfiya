@@ -196,8 +196,10 @@
 
 <div class="imgButton">
     <div class="container">
-        <div class="imgslider"><img src="../../assets/slider/img1.png" alt="img1"></div>
-
+        <drag-scroll [scroll-x-wheel-enabled]="true">
+            <div class="imgslider" *ngFor="let p of imgList; let i = index" drag-scroll-item>
+                <img [src]="p.image" alt="img1"></div>
+        </drag-scroll>
     </div>
 </div>
 
@@ -563,9 +565,10 @@
 <div class="imgProduct">
     <div class="container">
         <drag-scroll [scroll-x-wheel-enabled]="true">
-            <div *ngFor="let p of productList; let i = index" drag-scroll-item>
+            <!-- <div *ngFor="let p of productList; let i = index" drag-scroll-item> -->
 
-                <div class="imgslider"><img [src]="p.image" alt="img1">
+                <div class="imgslider"  *ngFor="let p of productList; let i = index" drag-scroll-item>
+                    <img [src]="p.image" alt="img1">
                     <div class="overlay">
                         <div class="overlay_1">
                             {{p.title}}
@@ -573,7 +576,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </drag-scroll>
 
     </div>
