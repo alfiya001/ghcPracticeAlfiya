@@ -494,7 +494,8 @@
             width: 271px;
             height: 271px;
             background-color: rgba(0, 0, 0, 0.5);
-
+            object-fit: none;
+            //border-radius: 30px;
         }
 
         .overlay {
@@ -532,5 +533,5 @@ drag-scroll {
 }
 
 .sampleBreadingSpace {
-    height: 200vh;
+    height: 10vh;
 }

@@ -435,7 +435,33 @@
         </div>
     </div>
 </div>
+<div class="productsButton">
+    <div class="container">
+        <div class="productsHeader">
+            <div class="sectiontitle">Understanding Hair</div>
+            <div class="viewallbutton"><span>View all</span></div>
+        </div>
+    </div>
+</div>
+<div class="imgProduct">
+    <div class="container">
+        <drag-scroll [scroll-x-wheel-enabled]="true">
+            <!-- <div *ngFor="let p of productList; let i = index" drag-scroll-item> -->
 
+                <div class="imgslider"  *ngFor="let p of productList; let i = index" drag-scroll-item>
+                    <img [src]="p.image" alt="img1">
+                    <div class="overlay">
+                        <div class="overlay_1">
+                            {{p.title}}
+                            <div>{{p.bytitle}}</div>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </drag-scroll>
+
+    </div>
+</div>
 <div class="productsButton">
     <div class="container">
         <div class="productsHeader">
@@ -554,33 +580,7 @@
 </div>
 
 
-<div class="productsButton">
-    <div class="container">
-        <div class="productsHeader">
-            <div class="sectiontitle">Understanding Hair</div>
-            <div class="viewallbutton"><span>View all</span></div>
-        </div>
-    </div>
-</div>
-<div class="imgProduct">
-    <div class="container">
-        <drag-scroll [scroll-x-wheel-enabled]="true">
-            <!-- <div *ngFor="let p of productList; let i = index" drag-scroll-item> -->
 
-                <div class="imgslider"  *ngFor="let p of productList; let i = index" drag-scroll-item>
-                    <img [src]="p.image" alt="img1">
-                    <div class="overlay">
-                        <div class="overlay_1">
-                            {{p.title}}
-                            <div>{{p.bytitle}}</div>
-                        </div>
-                    </div>
-                </div>
-            <!-- </div> -->
-        </drag-scroll>
-
-    </div>
-</div>
 
 <!-- <div class="imgProduct">
     <div class="container">
@@ -594,6 +594,33 @@
             </div>
     </div>
 </div> -->
+<div class="productsButton">
+    <div class="container">
+        <div class="productsHeader">
+            <div class="sectiontitle">Skin - Talk</div>
+            <div class="viewallbutton"><span>View all</span></div>
+        </div>
+    </div>
+</div>
+<div class="imgProduct">
+    <div class="container">
+        <drag-scroll [scroll-x-wheel-enabled]="true">
+            <!-- <div *ngFor="let p of productList; let i = index" drag-scroll-item> -->
+
+                <div class="imgslider"  *ngFor="let p of skinList; let i = index" drag-scroll-item>
+                    <img [src]="p.image" alt="img1">
+                    <div class="overlay">
+                        <div class="overlay_1">
+                            {{p.title}}
+                            <div>{{p.bytitle}}</div>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </drag-scroll>
+
+    </div>
+</div>
 
 <div class="trackerButton">
     <div class="container">

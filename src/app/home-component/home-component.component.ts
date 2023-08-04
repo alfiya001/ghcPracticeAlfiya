@@ -32,6 +32,29 @@ export class HomeComponentComponent {
     }
   ];
 
+  skinList: Skin[] = [
+    {
+      "title": "6 Surprising Benefits of Washing Your Face with Salt Water",
+      "bytitle" : "By Mars by GHC on Jun 22, 2022",
+      "image": "../../assets/slider3/img1.png"
+    },
+    {
+      "title": "Get Clear, Radiant Skin with these 9 Benefits of Honey for Pimples",
+      "bytitle" : "By Mars by GHC on Jun 22, 2022",
+      "image": "../../assets/slider3/img2.png"
+    },
+    {
+      "title": "Everything you need to know about Saffron Benefits for Skin",
+      "bytitle" : "By Mars by GHC on Jun 22, 2022",
+      "image": "../../assets/slider3/img3.png"
+    },
+    {
+      "title": "Natural ways to remove tan from hands",
+      "bytitle" : "By Mars by GHC on Jun 22, 2022",
+      "image": "../../assets/slider3/img4.png"
+    }
+  ];
+
   imgList: Product[] = [
     {
       "title": "Groom to Perfection: Aloe Vera Hair Mask for Men's Hair Care",
@@ -91,6 +114,20 @@ class Product {
   constructor(product: any = {}) {
     this.title = product.title;
     this.bytitle = product.bytitle;
+    this.image = 'https://alcodesbase.blob.core.windows.net/generic/sections-default-image.png';
+  }
+
+ 
+}
+
+class Skin {
+  title: string;
+  image: string;
+  bytitle: string;
+
+  constructor(skin: any = {}) {
+    this.title = skin.title;
+    this.bytitle = skin.bytitle;
     this.image = 'https://alcodesbase.blob.core.windows.net/generic/sections-default-image.png';
   }
 }
