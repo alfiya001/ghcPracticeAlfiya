@@ -75,7 +75,7 @@
 
 
 
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 500px) {
     .customNavbar {
         height: 100px;
         width: 100%;
@@ -274,6 +274,7 @@
         }
 
 
+
         .weightSection {
             display: grid;
             grid-template-columns: 2fr 3fr;
@@ -327,6 +328,39 @@
                 font-size: 10px;
             }
         }
+
+
+        @media screen and (min-width: 550px) {
+            .wellnessHeading {
+                font-size: 16px;
+            }
+
+            .weightSection {
+                .overweightBlock {
+                    width: 75px;
+                    height: 20px;
+
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .wellnesstipsBlock {
+                width: 120px;
+                height: 26px;
+
+                display: grid;
+                grid-template-columns: 5px auto;
+                gap: 20px;
+                // place-content: center;
+
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+
     }
 }
 
@@ -336,6 +370,12 @@
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
+}
+
+@media screen and (min-width: 550px) {
+    .greyText {
+        font-size: 14px;
+    }
 }
 
 .healthCard {
@@ -363,6 +403,12 @@
             font-size: 12px;
             font-style: normal;
             font-weight: 500;
+        }
+
+        @media screen and (min-width: 550px) {
+            .cardTitle {
+                font-size: 16px;
+            }
         }
 
         .cardrow {
@@ -432,6 +478,13 @@
             width: 100%;
             border-radius: 10px;
             // padding-right: 2vh;
+        }
+    }
+
+    .container {
+        drag-scroll {
+            height: 15rem;
+            width: 100%;
         }
     }
 }
@@ -506,6 +559,20 @@
                 color: #333;
                 font-size: 12px;
                 font-weight: 400;
+            }
+        }
+
+        @media screen and (min-width: 550px) {
+            .sectiontitle {
+                font-size: 24px;
+            }
+
+            .viewallbutton {
+                width: 90px;
+                height: 20px;
+                span {
+                    font-size: 14px;
+                }
             }
         }
     }
